@@ -1,17 +1,19 @@
 <!--© 2021 Sean Murdock-->
+<!--Modified by Kelly "Mac" Young, Copyright (C) 2022 FOSSPCM-->
 
 <!DOCTYPE html>
 <html lang="en">
-<div style="height: 90px">
+<!--<div style="height: 90px">-->
 <head>
     <meta charset="UTF-8">
     <title>STEDI Login Page</title>
+    <style>body {height: 90px;}</style>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href= "favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <div class="page-header">
-    <p><img src="stedi-logo-4000px-x-4000px.png" width="200" height="200" style="background-color:black;"/></p>
+    <p><img src="stedi-logo-4000px-x-4000px.png" alt="STEDI Logo" width="200" height="200" style="background-color:black;"/></p>
 </div>
 <div style="text-align:center">
 
@@ -24,7 +26,7 @@
             <input class="btn btn-lg btn-primary" id="sendtextbtn" type="button" onclick="sendtext()" value="Send Text">
         </p>
         <p>
-            <label class="stepcount" for="password">One-Time Password</span></label><br>
+            <label class="stepcount" for="password">One-Time Password</label><br>
             <input class="stepcount" type="password" id="password" name="pwd" size="25" onchange="setuserpassword()" required >
         </p>
         <p>
@@ -35,9 +37,9 @@
         </p>
     </form>
 </div>
-</body>
-</div>
-
 <script src="jquery-3.1.1.min.js"></script>
 <script src="manageuser.js"></script>
+</body>
+
+
 </html>
